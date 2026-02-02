@@ -12,22 +12,22 @@ export default function DownloadPage() {
                 <h1 className="text-4xl font-bold tracking-tight text-white">Download SecureVault</h1>
 
                 <div className="bg-white/5 rounded-2xl p-8 border border-white/10 shadow-2xl">
-                    <Link
+                    <a
                         href="/securevault.apk"
                         className="block w-full py-5 bg-white text-black hover:bg-gray-200 rounded-xl text-xl font-bold transition-all shadow-lg active:scale-95 mb-6"
                         download
                     >
                         Download APK (Android)
-                    </Link>
+                    </a>
 
-                    <div className="grid grid-cols-3 gap-4 text-sm text-gray-400 border-t border-white/10 pt-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-400 border-t border-white/10 pt-6">
                         <div className="text-center">
                             <span className="block text-gray-500 text-xs uppercase tracking-wider mb-1">Version</span>
                             <span className="font-mono text-white">v1.0.0</span>
                         </div>
                         <div className="text-center border-l border-white/10">
                             <span className="block text-gray-500 text-xs uppercase tracking-wider mb-1">Size</span>
-                            <span className="font-mono text-white">~15 MB</span>
+                            <span className="font-mono text-white">~53 MB</span>
                         </div>
                         <div className="text-center border-l border-white/10">
                             <span className="block text-gray-500 text-xs uppercase tracking-wider mb-1">Min Android</span>
@@ -42,7 +42,7 @@ export default function DownloadPage() {
                     </p>
 
                     <div className="text-gray-500 text-xs">
-                        <p>Hash (SHA-256): <span className="font-mono bg-white/5 px-2 py-1 rounded">Pending Build</span></p>
+                        <p>Hash (SHA-256): <span className="font-mono bg-white/5 px-2 py-1 rounded break-all">b9934dacc3ad704b33b2724bcbbaa612520e6346fbe6656e31e3ea9b308b5c13</span></p>
                     </div>
                 </div>
 
