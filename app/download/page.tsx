@@ -13,7 +13,7 @@ export default function DownloadPage() {
 
                 <div className="bg-white/5 rounded-2xl p-8 border border-white/10 shadow-2xl">
                     <a
-                        href="/klypt.apk"
+                        href="/klypt.zip"
                         className="block w-full py-5 bg-white text-black hover:bg-gray-200 rounded-xl text-xl font-bold transition-all shadow-lg active:scale-95 mb-6"
                         download
                     >
