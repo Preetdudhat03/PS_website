@@ -15,9 +15,15 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    <div className="flex justify-center md:justify-end space-x-6">
+                    <div className="flex flex-wrap justify-center md:justify-end gap-6">
                         <Link href="https://github.com/Preetdudhat03/password_manager_app" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                             GitHub
+                        </Link>
+                        <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                            Privacy
+                        </Link>
+                        <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                            Terms
                         </Link>
                         <Link href="/disclaimer" className="text-gray-400 hover:text-white transition-colors">
                             Disclaimer
