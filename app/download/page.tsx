@@ -27,7 +27,7 @@ export default function DownloadPage() {
                         </div>
                         <div className="text-center border-l border-white/10">
                             <span className="block text-gray-500 text-xs uppercase tracking-wider mb-1">Size</span>
-                            <span className="font-mono text-white">~53 MB</span>
+                            <span className="font-mono text-white">~57 MB</span>
                         </div>
                         <div className="text-center border-l border-white/10">
                             <span className="block text-gray-500 text-xs uppercase tracking-wider mb-1">Min Android</span>
