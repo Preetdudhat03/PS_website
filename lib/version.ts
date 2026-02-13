@@ -1,7 +1,7 @@
 export const latestVersion = {
-    version: "1.0.0",
-    build: 1,
-    releaseDate: "2026-02-15",
+    version: "1.5.4",
+    build: 4,
+    releaseDate: "2026-02-13",
     downloadUrl: "https://klypt.vercel.app/download",
     changelog: [
         "Initial release",

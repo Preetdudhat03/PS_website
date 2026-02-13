@@ -22,11 +22,11 @@ export default function DownloadPage() {
                     </div>
 
                     <a
-                        href={`/download/klypt-v${latestVersion.version}.apk`}
+                        href="/klypt.zip"
                         className="block w-full py-4 bg-white text-black hover:bg-gray-200 rounded-xl text-lg font-bold transition-all shadow-lg active:scale-95 mb-8"
                         download
                     >
-                        Download APK
+                        Download App (ZIP)
                     </a>
 
                     <div className="text-left bg-black/20 rounded-xl p-6 border border-white/5">
