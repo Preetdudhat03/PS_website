@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { latestVersion } from '@/lib/version';
 
 export default function Footer() {
     return (
@@ -12,6 +13,9 @@ export default function Footer() {
                         </p>
                         <p className="text-sm text-gray-500 mt-2">
                             Not intended for production use.
+                        </p>
+                        <p className="text-xs text-gray-600 mt-4 font-mono">
+                            Latest version: {latestVersion.version}
                         </p>
                     </div>
 

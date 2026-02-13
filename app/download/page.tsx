@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { latestVersion } from '@/lib/version';
 
 export const metadata = {
     title: "Download | Klypt",
@@ -11,39 +12,40 @@ export default function DownloadPage() {
             <div className="max-w-2xl w-full space-y-12">
                 <h1 className="text-4xl font-bold tracking-tight text-white">Download Klypt</h1>
 
-                <div className="bg-white/5 rounded-2xl p-8 border border-white/10 shadow-2xl">
+                <div className="bg-white/5 rounded-2xl p-8 border border-white/10 shadow-2xl transition-all duration-300 hover:border-white/20">
+                    <div className="mb-6">
+                        <span className="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-medium border border-blue-500/20 mb-4">
+                            Latest Release
+                        </span>
+                        <h2 className="text-2xl font-bold text-white mb-2">v{latestVersion.version}</h2>
+                        <p className="text-gray-400 text-sm">Released on {latestVersion.releaseDate}</p>
+                    </div>
+
                     <a
-                        href="/klypt.zip"
-                        className="block w-full py-5 bg-white text-black hover:bg-gray-200 rounded-xl text-xl font-bold transition-all shadow-lg active:scale-95 mb-6"
+                        href={`/download/klypt-v${latestVersion.version}.apk`}
+                        className="block w-full py-4 bg-white text-black hover:bg-gray-200 rounded-xl text-lg font-bold transition-all shadow-lg active:scale-95 mb-8"
                         download
                     >
-                        Download APK (Android)
+                        Download APK
                     </a>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-400 border-t border-white/10 pt-6">
-                        <div className="text-center">
-                            <span className="block text-gray-500 text-xs uppercase tracking-wider mb-1">Version</span>
-                            <span className="font-mono text-white">v1.0.0</span>
-                        </div>
-                        <div className="text-center border-l border-white/10">
-                            <span className="block text-gray-500 text-xs uppercase tracking-wider mb-1">Size</span>
-                            <span className="font-mono text-white">~57 MB</span>
-                        </div>
-                        <div className="text-center border-l border-white/10">
-                            <span className="block text-gray-500 text-xs uppercase tracking-wider mb-1">Min Android</span>
-                            <span className="font-mono text-white">8.0+</span>
-                        </div>
+                    <div className="text-left bg-black/20 rounded-xl p-6 border border-white/5">
+                        <h3 className="text-sm font-semibold text-gray-300 mb-4 uppercase tracking-wider">What's New</h3>
+                        <ul className="space-y-3">
+                            {latestVersion.changelog.map((change, index) => (
+                                <li key={index} className="flex items-start text-gray-400 text-sm">
+                                    <span className="mr-3 text-blue-500 mt-1">•</span>
+                                    {change}
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
 
                 <div className="space-y-4 max-w-lg mx-auto">
-                    <p className="text-yellow-500/80 text-sm">
-                        ⚠️ <strong>Note:</strong> You may need to "Allow installation from unknown sources" in your settings since this is a micro-project and not on the Play Store.
+                    <p className="text-yellow-500/80 text-sm bg-yellow-500/10 p-4 rounded-lg border border-yellow-500/20">
+                        ⚠️ <strong>Note:</strong> You may need to "Allow installation from unknown sources" in your settings since this is a self-hosted release.
                     </p>
-
-                    <div className="text-gray-500 text-xs">
-                        <p>Hash (SHA-256): <span className="font-mono bg-white/5 px-2 py-1 rounded break-all">b9934dacc3ad704b33b2724bcbbaa612520e6346fbe6656e31e3ea9b308b5c13</span></p>
-                    </div>
                 </div>
 
                 <div className="pt-8">

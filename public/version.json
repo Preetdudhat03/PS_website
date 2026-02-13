@@ -1,0 +1,15 @@
+{
+    "app_name": "Klypt",
+    "platform": "android",
+    "version": "1.0.0",
+    "build": 1,
+    "release_date": "2026-02-15",
+    "download_url": "https://klypt.vercel.app/download",
+    "changelog": [
+        "Initial release",
+        "Secure offline vault",
+        "AES-256 encryption",
+        "Biometric unlock support"
+    ],
+    "minimum_supported_version": "1.0.0"
+}
