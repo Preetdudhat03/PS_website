@@ -7,9 +7,8 @@
     "download_url": "https://klypt.vercel.app/download",
     "changelog": [
         "Initial release",
-        "Secure offline vault",
+        "favorite items",
         "AES-256 encryption",
-        "Biometric unlock support",
         "test update"
     ],
     "minimum_supported_version": "1.0.0"

@@ -5,9 +5,8 @@ export const latestVersion = {
     downloadUrl: "https://klypt.vercel.app/download",
     changelog: [
         "Initial release",
-        "Secure offline vault",
+        "favorite items",
         "AES-256 encryption",
-        "Biometric unlock support",
         "test update"
     ]
 };
