@@ -1,8 +1,8 @@
 {
     "app_name": "Klypt",
     "platform": "android",
-    "version": "1.5.4+5",
-    "build": 5,
+    "version": "1.5.4+6",
+    "build": 6,
     "release_date": "2026-02-13",
     "download_url": "https://klypt.vercel.app/download",
     "changelog": [
