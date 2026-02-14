@@ -6,7 +6,7 @@ export const latestVersion = {
     changelog: [
         "Initial release",
         "favorite items",
-        "AES-256 encryption",
+        "remainder system",
         "test update"
     ]
 };
